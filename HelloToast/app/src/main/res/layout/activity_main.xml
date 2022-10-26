@@ -13,11 +13,11 @@
         android:backgroundTint="@color/purple_200"
         android:text="@string/button_label_toast"
         android:textColor="@android:color/black"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:onClick="showToast"
-        tools:ignore="UsingOnClickInXml" />
+        android:onClick="showToast" />
 
     <Button
         android:id="@+id/button_count"
@@ -29,7 +29,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="HardcodedText"
         android:onClick="countUp" />
 
     <TextView
