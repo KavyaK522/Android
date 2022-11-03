@@ -1,10 +1,14 @@
 package com.example.debugapp;
 
 
+import static com.example.debugapp.R.id.myResult;
+
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -15,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     TextView txt1;
 
 
-    @SuppressLint("MissingInflatedId")
+//    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,9 +30,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void doAdd(View view) {
+        Log.i("MainActivity","Executed 1");
         int a1 = Integer.parseInt(e1.getText().toString());
+        Log.i("MainActivity","Executed 2");
         int a2 = Integer.parseInt(e2.getText().toString());
+        Log.i("MainActivity","Executed 3");
         int result = a1+a2;
-        txt1.setText(result);
+        Log.i("MainActivity","Executed 4");
+        txt1.setText(""+result);
+        Log.i("MainActivity","Executed 5");
     }
 }
