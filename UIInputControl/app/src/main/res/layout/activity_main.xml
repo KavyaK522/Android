@@ -54,7 +54,7 @@
         tools:layout_editor_absoluteX="101dp" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/ch1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="342dp"
@@ -63,7 +63,7 @@
         tools:layout_editor_absoluteX="200dp" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/ch2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="295dp"
@@ -93,5 +93,26 @@
         android:text="Female"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="55dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="62dp"
+        android:text="Alert dialog"
+        android:onClick="openAlert"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="30dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="62dp"
+        android:text="progress dialog"
+        android:onClick="openProgress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
